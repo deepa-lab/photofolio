@@ -1,0 +1,20 @@
+.img{
+    width: 49px;
+    height: 49px;
+}
+.navbar{
+    display: flex;
+}
+.logo{
+    display: flex;
+    padding: 1.2rem 2.5rem;
+    align-items: center;
+}
+.logo span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+.navbar{
+    background-color: #a0a0f9
+}

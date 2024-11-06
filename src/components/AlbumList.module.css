@@ -1,0 +1,91 @@
+/* General Styles */
+
+/* Header for Album */
+.albumHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Album Header Text */
+.albumHeader h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    justify-content: flex-start;
+}
+
+/* Button Styling */
+button {
+    justify-content: flex-end;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+
+/* Album List Container */
+.albumList {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Album Item */
+.album {
+    align-items: center;
+    border: 5px solid #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin-block: 30px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+/* Album Image Styling */
+.album img {
+    width: 50px;
+}
+
+/* Album Span Text */
+.album span {
+    background-color: #eee;
+    font-size: 1.1rem;
+    font-weight: 700;
+    justify-self: baseline;
+    padding-block: 5px;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* Album Content Grid */
+.albumContent {
+    grid-gap: 30px;
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-auto-rows: 150px;
+    grid-template: repeat(1, 150px) / repeat(auto-fit, minmax(150px, .5fr));
+    margin-bottom: 100px;
+}
+
+/* Cancel Button */
+.cancel {
+    border: 2px solid #ff1300;
+    color: #ff1300;
+    background-color: rgba(255, 19, 0, 0.1);
+}
+
+/* Add Image Button */
+.albumAdd {
+    color: #07f;
+    border: 2px solid #07f;
+    background-color: rgba(0, 119, 255, 0.1);
+}
