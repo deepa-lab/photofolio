@@ -57,7 +57,7 @@ const AlbumList = () => {
       <div className={styles.albumContent}>
         {albums.map(album => (
           <div key={album.id} className={styles.album} onClick={() => handleAlbumClick(album)}>
-            <img src="https://mellow-seahorse-fc9268.netlify.app/assets/photos.png"/>
+            <img src="https://mellow-seahorse-fc9268.netlify.app/assets/photos.png" alt="album"/>
             <span>{album?.name}</span>
           </div>
         ))}

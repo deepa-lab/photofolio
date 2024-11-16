@@ -1,6 +1,6 @@
 import AlbumList from "./components/AlbumList";
 import Navbar from "./components/Navbar";
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (

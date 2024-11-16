@@ -3,7 +3,7 @@ import { db } from '../firebaseInit';
 import { collection, onSnapshot, query, where, doc, deleteDoc, getDocs } from 'firebase/firestore';
 import styles from './ImagesList.module.css';
 import ImageForm from './ImageForm';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ImageCarousel from './ImageCarousel';
 import Spinner from 'react-spinner-material';
@@ -107,8 +107,10 @@ const ImagesList = ({ album, setShowDetails, setShow, show, showDetails, images,
   // useEffect to call the debounced search function whenever the search term changes
   useEffect(() => {
     if (search) {
-      debounce(handleSearch, 500); // Debounce with 500ms delay
+     
+      debounce(handleSearch, 500); 
     }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]); // Only run when 'search' state changes
 
   return (
@@ -170,6 +172,7 @@ const ImagesList = ({ album, setShowDetails, setShow, show, showDetails, images,
             ) : (
               <img
                 src="https://mellow-seahorse-fc9268.netlify.app/assets/search.png"
+                alt="search"
                 className={styles.search}
                 onClick={() => setShowSearch(true)}
               />
